@@ -16,4 +16,6 @@
 
 2. ### Signin page: ![Signin Page](./images/DocsScreenshots/Signin_Page(1).png) 
 
-3. ### Signin Page: ![Signin Page](./images/DocsScreenshots/Signin_Page.png)
+### After clicking on signin option ![Signin Page](./images/DocsScreenshots/Signin_Page.png)
+
+### After clicking on continue button ![Sisgnin Page](./images/DocsScreenshots/Signin_Page(2).png)
