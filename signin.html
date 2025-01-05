@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup page</title>
+    <link rel="stylesheet" href="./styles/signin.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      
+      <div><img src="./images/aLogo.png" alt="" /></div>
+      <div><h1>Hi Friend!</h1></div>
+      <div>Enter your email to sign in or join for</div>
+      <div id="logo-container">
+        <div class="logo">
+          <div class="image">
+            <img src="./images/exclusive_discount.svg" alt="" />
+            <div>
+              <p style="color: black;">
+                Exclusive <br />
+                Discounts
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo">
+          <div class="image">
+            <img src="./images/Tracking_Logo.svg" alt="" />
+            <div>
+              <p style="color: black;">
+                Easily tracked <br />
+                deliveries and returns
+              </p>
+            </div>
+           </div>
+        </div>
+
+        <div class="logo">
+          <div class="image">
+            <img src="./images/speedy_chekout_logo.svg" alt="" />
+            <div>
+              <p style="color: black;">
+                Speedy<br />
+                Checkout
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form id="form" action="continue.html">
+        <label for="email">Email:*</label>
+        <input id="email" type="email" />
+        <input type="submit" value="Continue" />
+      </form>
+      <p>------------------ or continue with ------------------</p>
+      <div class="social-icons-container">
+        <div class="social-icon"><i class="fa-brands fa-google"></i></div>
+        <div class="social-icon"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="social-icon"><i class="fa-brands fa-apple"></i></div>
+      </div>
+    </div>
+    <footer id="footer">
+        <div id="footer-last-div">
+            <p>&copy; 2025 ASOS</p>
+            <p>Privacy & Cookies | Ts&Cs | Accesibility</p>
+          </div>
+    </footer>
+  </body>
+  <script>
+    document.getElementById('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        window.location.href = 'continue.html?email=' + encodeURIComponent(email);
+    });
+</script>
+
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/continue.css" />
+  </head>
+  <body>
+    <div id="main-div">
+      <img src="./images/aLogo.png" alt="" />
+      <h1 style="text-align: center">We love new faces :)</h1>
+      <div id="form-div">
+        <form id="form" action="">
+          <label for="email">EMAIL: </label>
+          <input id="email" type="email" />
+          <label for="name">FIRST NAME:*</label>
+          <input id="name" type="text" required />
+          <label for="last_name">LAST NAME:*</label>
+          <input id="last_name" type="text" required />
+          <label for="password">PASSWORD:*</label>
+          <input id="password" type="password" required />
+          <p>Mush be 10 or more characters</p>
+          <label for="date">DATE OF BIRTH:*</label>
+          <input id="date" type="date" required />
+          <p>You need to be 16 or over to use ASOS</p>
+          <h4>Mostly interested in:*</h4>
+          <label for="Womenswear">Womenswear</label>
+          <input type="radio" id="Womenswear" />
+          <label for="Menswear">Menswear</label>
+          <input type="radio" id="Menswear" />
+          <input type="submit" value="JOIN ASOS" />
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Function to get the query parameter by name
+    function getQueryParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Ensure the page is fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the email from the URL and display it
+      const email = getQueryParam("email");
+      console.log("Email from URL:", email); // Debugging line
+      if (email) {
+        document.getElementById("email").value = email;
+      } else {
+        console.log("Email not found in URL");
+      }
+    });
+  </script>
+  <script src="./scripts/continue.js" type="module"></script>
+</html>

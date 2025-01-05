@@ -1,0 +1,18 @@
+#form-div {
+    /* border: 2px solid blue; */
+    margin: auto;
+    width: 500px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="submit"] {
+    height: 50px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
