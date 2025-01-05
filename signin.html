@@ -13,7 +13,6 @@
   </head>
   <body>
     <div id="main-container">
-      
       <div><img src="./images/aLogo.png" alt="" /></div>
       <div><h1>Hi Friend!</h1></div>
       <div>Enter your email to sign in or join for</div>
@@ -22,7 +21,7 @@
           <div class="image">
             <img src="./images/exclusive_discount.svg" alt="" />
             <div>
-              <p style="color: black;">
+              <p style="color: black">
                 Exclusive <br />
                 Discounts
               </p>
@@ -34,19 +33,19 @@
           <div class="image">
             <img src="./images/Tracking_Logo.svg" alt="" />
             <div>
-              <p style="color: black;">
+              <p style="color: black">
                 Easily tracked <br />
                 deliveries and returns
               </p>
             </div>
-           </div>
+          </div>
         </div>
 
         <div class="logo">
           <div class="image">
             <img src="./images/speedy_chekout_logo.svg" alt="" />
             <div>
-              <p style="color: black;">
+              <p style="color: black">
                 Speedy<br />
                 Checkout
               </p>
@@ -68,19 +67,20 @@
       </div>
     </div>
     <footer id="footer">
-        <div id="footer-last-div">
-            <p>&copy; 2025 ASOS</p>
-            <p>Privacy & Cookies | Ts&Cs | Accesibility</p>
-          </div>
+      <div id="footer-last-div">
+        <p>&copy; 2025 ASOS</p>
+        <p>Privacy & Cookies | Ts&Cs | Accesibility</p>
+      </div>
     </footer>
   </body>
   <script>
-    document.getElementById('form').addEventListener('submit', function(event) {
+    document
+      .getElementById("form")
+      .addEventListener("submit", function (event) {
         event.preventDefault();
-        const email = document.getElementById('email').value;
-        window.location.href = 'continue.html?email=' + encodeURIComponent(email);
-    });
-</script>
-
-
+        const email = document.getElementById("email").value;
+        window.location.href =
+          "continue.html?email=" + encodeURIComponent(email);
+      });
+  </script>
 </html>
